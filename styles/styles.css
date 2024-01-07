@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
 
@@ -12,6 +13,20 @@
     width: 75%;
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.section-heading {
+    max-width: 594px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.section-heading h2 {
+    color: #272727;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 24px;
 }
 
 p {
@@ -44,7 +59,7 @@ header {
     justify-content: space-between;
 }
 
-.banner .banner-text *{
+.banner .banner-text * {
     margin-bottom: 32px;
     max-width: 700px;
 }
@@ -58,4 +73,83 @@ header {
 .banner .banner-img img {
     width: 100%;
     vertical-align: middle;
+}
+
+/* featured section styles */
+#featured {
+    padding: 100px 0;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 24px;
+}
+
+.section-content .flower .flower-img {
+    border-radius: 300px 300px 0px 0px;
+    background: rgba(167, 33, 98, 0.15);
+    width: 440px;
+    height: 538px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.section-content .flower:nth-child(2) .flower-img {
+    align-items: center;
+}
+
+.section-content .flower .flower-img img {
+    width: 70%;
+}
+
+.section-content .flower .pink {
+    background-color: rgba(167, 33, 98, 0.15);
+}
+
+.section-content .flower .blue {
+    background-color: rgba(5, 151, 160, 0.15);
+}
+
+.section-content .flower .green {
+    background-color: rgba(71, 125, 17, 0.15);
+}
+
+.section-content .flower p {
+    color: #272727;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 35px;
+    text-decoration-line: underline;
+}
+
+/* shopping widgets styles */
+.widgets-bg {
+    border-radius: 8px;
+    background: rgba(39, 39, 39, 0.05);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+}
+
+.widgets-bg .widgets * {
+    text-align: center;
+}
+
+.widgets-bg .widgets img {
+    width: 88px;
+    margin-bottom: 24px;
+}
+
+.widgets-bg .widgets p {
+    color: rgba(39, 39, 39, 0.80);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 35px;
 }
